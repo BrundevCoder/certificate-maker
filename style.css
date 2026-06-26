@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .sub-container {
@@ -110,4 +111,14 @@ body {
   bottom: 0;
   width: 39%;
   right: 0;
+}
+
+button {
+  font-family: "Syne", sans-serif;
+  margin-top: 2rem;
+  padding: 1.5rem 1.7rem;
+  border: 2px solid black;
+  box-shadow: 3px 5px 0 black;
+  background: #ffa2a2;
+  font-weight: 700;
 }
