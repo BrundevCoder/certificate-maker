@@ -30,6 +30,7 @@ body {
 
 .certificate-box {
   position: relative;
+  overflow: hidden;
   width: 100%;
   height: 45vh;
   display: flex;
@@ -64,9 +65,49 @@ body {
   margin-bottom: .2rem;
 }
 
+.author {
+  user-select: none;
+  position: relative;
+}
+
+.author::after {
+  position: absolute;
+  content: "";
+  background: rgba(36, 32, 255, 0.747);
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  border-radius: 12px;
+}
+
 .bar {
   width: 100%;
   height: 5px;
   background: linear-gradient(-250deg,#fff, rgb(144, 13, 156));
   border-radius: 1000px;
+}
+
+.message {
+  margin-top: .5rem;
+  font-size: .9rem;
+}
+
+.floating-img {
+  position: absolute;
+  z-index: 0;
+}
+
+.first-img {
+  top: 0;
+  left: -15%;
+  width: 35%;
+  border-end-end-radius: 24px;
+  transform: scale(1.66);
+}
+
+.second-img {
+  bottom: 0;
+  width: 39%;
+  right: 0;
 }
